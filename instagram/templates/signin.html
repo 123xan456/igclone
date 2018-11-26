@@ -1,0 +1,11 @@
+{%extends "ig.html" %}
+{% block content %}
+<h1>Login to access account </h1>
+<form method="POST" action="/signin" novalidate>
+    <label>Username</label>
+    <input type="text" placeholder="Your email or username" name='user_username' method='post' required></br></br>
+    <label>Password</label>
+    <input type="password" placeholder="Password" name='user_password' method='post' required>
+    <input type='submit' name='submit' value='Enter'>
+</form>
+{% endblock %}
